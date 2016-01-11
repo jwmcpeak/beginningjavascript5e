@@ -1,3 +1,5 @@
+This is the unofficial errata for Beginning JavaScript, 5th Edition. If you find any errors in the text, please submit them to Wrox using their [errata submission form](http://wrox.custhelp.com/app/ask).
+
 #Chapter 1 
 p. 11
 Insert this line before the alert("Second Script Block"); line:
