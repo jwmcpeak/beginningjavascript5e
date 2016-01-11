@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Chapter 10: Example 1</title>
+</head>
+<body>
+    <img src="usa.gif" onclick="changeImg(this)" />
+    <img src="mexico.gif" onclick="changeImg(this)" />
+
+    <script>
+        var myImages = [
+            "usa.gif",
+            "canada.gif",
+            "jamaica.gif",
+            "mexico.gif"
+        ];
+
+        function changeImg(that) {
+            var newImgNumber = Math.round(Math.random() * 3);
+
+            while (that.src.indexOf(myImages[newImgNumber]) != -1) {
+                newImgNumber = Math.round(Math.random() * 3);
+            }
+
+            that.src = myImages[newImgNumber];
+        }
+    </script>
+</body>
+</html>
